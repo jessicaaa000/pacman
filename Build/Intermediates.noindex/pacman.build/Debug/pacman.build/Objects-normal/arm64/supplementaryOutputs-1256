@@ -1,0 +1,24 @@
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/LoseView.swift":
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/LoseView.o"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/LoseView.d"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/LoseView.swiftdeps"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/LoseView.dia"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/LoseView.swiftconstvalues"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/BlinkyView.swift":
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BlinkyView.dia"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BlinkyView.o"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BlinkyView.swiftconstvalues"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BlinkyView.swiftdeps"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BlinkyView.d"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/GameStats.swift":
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStats.d"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStats.swiftdeps"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStats.swiftconstvalues"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStats.o"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStats.dia"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/DerivedSources/GeneratedAssetSymbols.swift":
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GeneratedAssetSymbols.d"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GeneratedAssetSymbols.dia"

@@ -1,0 +1,24 @@
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/Dot.swift":
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Dot.dia"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Dot.o"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Dot.d"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Dot.swiftconstvalues"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Dot.swiftdeps"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/EnergizerView.swift":
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/EnergizerView.d"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/EnergizerView.o"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/EnergizerView.swiftdeps"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/EnergizerView.swiftconstvalues"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/EnergizerView.dia"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/BoardView.swift":
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BoardView.dia"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BoardView.swiftdeps"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BoardView.o"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BoardView.d"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/BoardView.swiftconstvalues"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/pacmanView.swift":
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanView.swiftdeps"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanView.d"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanView.dia"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanView.o"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanView.swiftconstvalues"

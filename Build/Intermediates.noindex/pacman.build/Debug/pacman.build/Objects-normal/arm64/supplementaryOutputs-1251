@@ -1,0 +1,24 @@
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/Ghost.swift":
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Ghost.swiftdeps"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Ghost.d"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Ghost.dia"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Ghost.swiftconstvalues"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Ghost.o"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/GhostView.swift":
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.swiftconstvalues"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.d"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.o"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.swiftdeps"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.dia"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/Inky.swift":
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Inky.d"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Inky.swiftdeps"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Inky.o"
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Inky.swiftconstvalues"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/Inky.dia"
+"/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/pacman/PacmanLogic.swift":
+  const-values: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.swiftconstvalues"
+  object: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.o"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.swiftdeps"
+  dependencies: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.d"
+  diagnostics: "/Users/jessicapawlowska/Documents/STUDIA/PK/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.dia"

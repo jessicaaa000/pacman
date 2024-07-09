@@ -1,0 +1,16 @@
+{
+  "source": "/Users/jessicapawlowska/Documents/projects/pacman/pacman/FirstMenu.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Pacman"
+      },
+      {
+        "comment": "",
+        "key": "Start Game"
+      }
+    ]
+  },
+  "version": 1
+}

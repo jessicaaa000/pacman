@@ -1,0 +1,28 @@
+{
+  "source": "/Users/jessicapawlowska/Documents/projects/pacman/pacman/SecondMenu.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Write your name"
+      },
+      {
+        "comment": "",
+        "key": "Incorrect name. Try again"
+      },
+      {
+        "comment": "",
+        "key": "Correct name"
+      },
+      {
+        "comment": "",
+        "key": "Enter your name"
+      },
+      {
+        "comment": "",
+        "key": "Enter"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A4F0D642C0F11E0007B7390 /* pacmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F0D632C0F11E0007B7390 /* pacmanApp.swift */; };
+		1A4F0D662C0F11E0007B7390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F0D652C0F11E0007B7390 /* ContentView.swift */; };
+		1A4F0D682C0F11E2007B7390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4F0D672C0F11E2007B7390 /* Assets.xcassets */; };
+		1A4F0D6B2C0F11E2007B7390 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4F0D6A2C0F11E2007B7390 /* Preview Assets.xcassets */; };
+		1A4F0D752C0F2E2A007B7390 /* pacmanBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F0D742C0F2E2A007B7390 /* pacmanBoard.swift */; };
+		1A4F0D792C0F2ECC007B7390 /* objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F0D782C0F2ECC007B7390 /* objects.swift */; };
+		1A7F4E252C109E05000A200E /* pacmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F4E242C109E05000A200E /* pacmanView.swift */; };
+		1A98901C2C2A172600A19D4A /* InkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A98901B2C2A172600A19D4A /* InkyView.swift */; };
+		1A9890202C2A194E00A19D4A /* PinkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A98901F2C2A194E00A19D4A /* PinkyView.swift */; };
+		1A9890222C2A19AA00A19D4A /* ClydeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9890212C2A19AA00A19D4A /* ClydeView.swift */; };
+		1A9890242C2B6BB100A19D4A /* FirstMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9890232C2B6BB100A19D4A /* FirstMenu.swift */; };
+		1A9890262C2B6EBD00A19D4A /* SecondMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9890252C2B6EBD00A19D4A /* SecondMenu.swift */; };
+		1A9890282C2B6ECD00A19D4A /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9890272C2B6ECD00A19D4A /* WinView.swift */; };
+		1A98902A2C2B6ED900A19D4A /* LoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9890292C2B6ED900A19D4A /* LoseView.swift */; };
+		1AEE8DE42C21F49D00D09B60 /* PacmanLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DE32C21F49D00D09B60 /* PacmanLogic.swift */; };
+		1AEE8DEA2C240C3400D09B60 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DE92C240C3400D09B60 /* DotView.swift */; };
+		1AEE8DEC2C240D4A00D09B60 /* Energizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DEB2C240D4A00D09B60 /* Energizer.swift */; };
+		1AEE8DEE2C240D5D00D09B60 /* EnergizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DED2C240D5D00D09B60 /* EnergizerView.swift */; };
+		1AEE8DF02C240D8500D09B60 /* FoodBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DEF2C240D8500D09B60 /* FoodBoard.swift */; };
+		1AEE8DF22C240E2400D09B60 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DF12C240E2400D09B60 /* Dot.swift */; };
+		1AEE8DF42C2410A600D09B60 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DF32C2410A600D09B60 /* FoodView.swift */; };
+		1AEE8DF62C2412D800D09B60 /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DF52C2412D800D09B60 /* GameStats.swift */; };
+		1AEE8DF82C2412E500D09B60 /* GameStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DF72C2412E500D09B60 /* GameStatsView.swift */; };
+		1AEE8DFA2C2413A100D09B60 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8DF92C2413A100D09B60 /* BoardView.swift */; };
+		1AEE8E0A2C29736300D09B60 /* Ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E092C29736300D09B60 /* Ghost.swift */; };
+		1AEE8E0C2C2973BE00D09B60 /* Blinky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E0B2C2973BD00D09B60 /* Blinky.swift */; };
+		1AEE8E0E2C2973C900D09B60 /* Clyde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E0D2C2973C900D09B60 /* Clyde.swift */; };
+		1AEE8E102C2973D500D09B60 /* Inky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E0F2C2973D500D09B60 /* Inky.swift */; };
+		1AEE8E122C2973E100D09B60 /* Pinky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E112C2973E100D09B60 /* Pinky.swift */; };
+		1AEE8E142C29759300D09B60 /* GhostLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E132C29759300D09B60 /* GhostLogic.swift */; };
+		1AEE8E162C29792300D09B60 /* BlinkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E152C29792300D09B60 /* BlinkyView.swift */; };
+		1AEE8E182C2982B800D09B60 /* GhostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E172C2982B800D09B60 /* GhostView.swift */; };
+		1AEE8E1A2C2985A700D09B60 /* direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E192C2985A700D09B60 /* direction.swift */; };
+		1AEE8E1C2C298D5C00D09B60 /* queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE8E1B2C298D5C00D09B60 /* queue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A4F0D602C0F11E0007B7390 /* pacman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pacman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4F0D632C0F11E0007B7390 /* pacmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pacmanApp.swift; sourceTree = "<group>"; };
+		1A4F0D652C0F11E0007B7390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A4F0D672C0F11E2007B7390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A4F0D6A2C0F11E2007B7390 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A4F0D6C2C0F11E2007B7390 /* pacman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pacman.entitlements; sourceTree = "<group>"; };
+		1A4F0D742C0F2E2A007B7390 /* pacmanBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pacmanBoard.swift; sourceTree = "<group>"; };
+		1A4F0D782C0F2ECC007B7390 /* objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objects.swift; sourceTree = "<group>"; };
+		1A7F4E242C109E05000A200E /* pacmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pacmanView.swift; sourceTree = "<group>"; };
+		1A98901B2C2A172600A19D4A /* InkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkyView.swift; sourceTree = "<group>"; };
+		1A98901F2C2A194E00A19D4A /* PinkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyView.swift; sourceTree = "<group>"; };
+		1A9890212C2A19AA00A19D4A /* ClydeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClydeView.swift; sourceTree = "<group>"; };
+		1A9890232C2B6BB100A19D4A /* FirstMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMenu.swift; sourceTree = "<group>"; };
+		1A9890252C2B6EBD00A19D4A /* SecondMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMenu.swift; sourceTree = "<group>"; };
+		1A9890272C2B6ECD00A19D4A /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
+		1A9890292C2B6ED900A19D4A /* LoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseView.swift; sourceTree = "<group>"; };
+		1AEE8DE32C21F49D00D09B60 /* PacmanLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanLogic.swift; sourceTree = "<group>"; };
+		1AEE8DE92C240C3400D09B60 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
+		1AEE8DEB2C240D4A00D09B60 /* Energizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Energizer.swift; sourceTree = "<group>"; };
+		1AEE8DED2C240D5D00D09B60 /* EnergizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergizerView.swift; sourceTree = "<group>"; };
+		1AEE8DEF2C240D8500D09B60 /* FoodBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBoard.swift; sourceTree = "<group>"; };
+		1AEE8DF12C240E2400D09B60 /* Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
+		1AEE8DF32C2410A600D09B60 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		1AEE8DF52C2412D800D09B60 /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
+		1AEE8DF72C2412E500D09B60 /* GameStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatsView.swift; sourceTree = "<group>"; };
+		1AEE8DF92C2413A100D09B60 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		1AEE8E092C29736300D09B60 /* Ghost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost.swift; sourceTree = "<group>"; };
+		1AEE8E0B2C2973BD00D09B60 /* Blinky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blinky.swift; sourceTree = "<group>"; };
+		1AEE8E0D2C2973C900D09B60 /* Clyde.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clyde.swift; sourceTree = "<group>"; };
+		1AEE8E0F2C2973D500D09B60 /* Inky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inky.swift; sourceTree = "<group>"; };
+		1AEE8E112C2973E100D09B60 /* Pinky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinky.swift; sourceTree = "<group>"; };
+		1AEE8E132C29759300D09B60 /* GhostLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostLogic.swift; sourceTree = "<group>"; };
+		1AEE8E152C29792300D09B60 /* BlinkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkyView.swift; sourceTree = "<group>"; };
+		1AEE8E172C2982B800D09B60 /* GhostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostView.swift; sourceTree = "<group>"; };
+		1AEE8E192C2985A700D09B60 /* direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = direction.swift; sourceTree = "<group>"; };
+		1AEE8E1B2C298D5C00D09B60 /* queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queue.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A4F0D5D2C0F11E0007B7390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4F0D572C0F11E0007B7390 = {
+			isa = PBXGroup;
+			children = (
+				1A4F0D622C0F11E0007B7390 /* pacman */,
+				1A4F0D612C0F11E0007B7390 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A4F0D612C0F11E0007B7390 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A4F0D602C0F11E0007B7390 /* pacman.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A4F0D622C0F11E0007B7390 /* pacman */ = {
+			isa = PBXGroup;
+			children = (
+				1A4F0D632C0F11E0007B7390 /* pacmanApp.swift */,
+				1A4F0D652C0F11E0007B7390 /* ContentView.swift */,
+				1AEE8DF72C2412E500D09B60 /* GameStatsView.swift */,
+				1AEE8DE92C240C3400D09B60 /* DotView.swift */,
+				1AEE8DF92C2413A100D09B60 /* BoardView.swift */,
+				1AEE8E172C2982B800D09B60 /* GhostView.swift */,
+				1AEE8DF32C2410A600D09B60 /* FoodView.swift */,
+				1AEE8DED2C240D5D00D09B60 /* EnergizerView.swift */,
+				1A7F4E242C109E05000A200E /* pacmanView.swift */,
+				1A98901B2C2A172600A19D4A /* InkyView.swift */,
+				1A9890272C2B6ECD00A19D4A /* WinView.swift */,
+				1A98901F2C2A194E00A19D4A /* PinkyView.swift */,
+				1A9890252C2B6EBD00A19D4A /* SecondMenu.swift */,
+				1A9890292C2B6ED900A19D4A /* LoseView.swift */,
+				1A9890212C2A19AA00A19D4A /* ClydeView.swift */,
+				1AEE8E152C29792300D09B60 /* BlinkyView.swift */,
+				1A9890232C2B6BB100A19D4A /* FirstMenu.swift */,
+				1A4F0D672C0F11E2007B7390 /* Assets.xcassets */,
+				1A4F0D6C2C0F11E2007B7390 /* pacman.entitlements */,
+				1A4F0D692C0F11E2007B7390 /* Preview Content */,
+				1AEE8E0D2C2973C900D09B60 /* Clyde.swift */,
+				1AEE8DE32C21F49D00D09B60 /* PacmanLogic.swift */,
+				1A4F0D742C0F2E2A007B7390 /* pacmanBoard.swift */,
+				1AEE8E112C2973E100D09B60 /* Pinky.swift */,
+				1AEE8E0F2C2973D500D09B60 /* Inky.swift */,
+				1AEE8E0B2C2973BD00D09B60 /* Blinky.swift */,
+				1A4F0D782C0F2ECC007B7390 /* objects.swift */,
+				1AEE8DEB2C240D4A00D09B60 /* Energizer.swift */,
+				1AEE8DEF2C240D8500D09B60 /* FoodBoard.swift */,
+				1AEE8DF12C240E2400D09B60 /* Dot.swift */,
+				1AEE8DF52C2412D800D09B60 /* GameStats.swift */,
+				1AEE8E092C29736300D09B60 /* Ghost.swift */,
+				1AEE8E132C29759300D09B60 /* GhostLogic.swift */,
+				1AEE8E192C2985A700D09B60 /* direction.swift */,
+				1AEE8E1B2C298D5C00D09B60 /* queue.swift */,
+			);
+			path = pacman;
+			sourceTree = "<group>";
+		};
+		1A4F0D692C0F11E2007B7390 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A4F0D6A2C0F11E2007B7390 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A4F0D5F2C0F11E0007B7390 /* pacman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4F0D6F2C0F11E2007B7390 /* Build configuration list for PBXNativeTarget "pacman" */;
+			buildPhases = (
+				1A4F0D5C2C0F11E0007B7390 /* Sources */,
+				1A4F0D5D2C0F11E0007B7390 /* Frameworks */,
+				1A4F0D5E2C0F11E0007B7390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pacman;
+			productName = pacman;
+			productReference = 1A4F0D602C0F11E0007B7390 /* pacman.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A4F0D582C0F11E0007B7390 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					1A4F0D5F2C0F11E0007B7390 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 1A4F0D5B2C0F11E0007B7390 /* Build configuration list for PBXProject "pacman" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A4F0D572C0F11E0007B7390;
+			productRefGroup = 1A4F0D612C0F11E0007B7390 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A4F0D5F2C0F11E0007B7390 /* pacman */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A4F0D5E2C0F11E0007B7390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4F0D6B2C0F11E2007B7390 /* Preview Assets.xcassets in Resources */,
+				1A4F0D682C0F11E2007B7390 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A4F0D5C2C0F11E0007B7390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9890222C2A19AA00A19D4A /* ClydeView.swift in Sources */,
+				1A4F0D792C0F2ECC007B7390 /* objects.swift in Sources */,
+				1AEE8E1A2C2985A700D09B60 /* direction.swift in Sources */,
+				1A4F0D752C0F2E2A007B7390 /* pacmanBoard.swift in Sources */,
+				1AEE8DF82C2412E500D09B60 /* GameStatsView.swift in Sources */,
+				1AEE8E122C2973E100D09B60 /* Pinky.swift in Sources */,
+				1A9890282C2B6ECD00A19D4A /* WinView.swift in Sources */,
+				1AEE8E1C2C298D5C00D09B60 /* queue.swift in Sources */,
+				1A9890242C2B6BB100A19D4A /* FirstMenu.swift in Sources */,
+				1AEE8DF42C2410A600D09B60 /* FoodView.swift in Sources */,
+				1AEE8E182C2982B800D09B60 /* GhostView.swift in Sources */,
+				1AEE8DE42C21F49D00D09B60 /* PacmanLogic.swift in Sources */,
+				1AEE8E0A2C29736300D09B60 /* Ghost.swift in Sources */,
+				1AEE8E102C2973D500D09B60 /* Inky.swift in Sources */,
+				1AEE8E142C29759300D09B60 /* GhostLogic.swift in Sources */,
+				1A9890202C2A194E00A19D4A /* PinkyView.swift in Sources */,
+				1AEE8DF02C240D8500D09B60 /* FoodBoard.swift in Sources */,
+				1A4F0D662C0F11E0007B7390 /* ContentView.swift in Sources */,
+				1A98901C2C2A172600A19D4A /* InkyView.swift in Sources */,
+				1AEE8DEC2C240D4A00D09B60 /* Energizer.swift in Sources */,
+				1AEE8DEA2C240C3400D09B60 /* DotView.swift in Sources */,
+				1AEE8E0E2C2973C900D09B60 /* Clyde.swift in Sources */,
+				1AEE8DF22C240E2400D09B60 /* Dot.swift in Sources */,
+				1A7F4E252C109E05000A200E /* pacmanView.swift in Sources */,
+				1AEE8DEE2C240D5D00D09B60 /* EnergizerView.swift in Sources */,
+				1AEE8DFA2C2413A100D09B60 /* BoardView.swift in Sources */,
+				1AEE8E0C2C2973BE00D09B60 /* Blinky.swift in Sources */,
+				1A9890262C2B6EBD00A19D4A /* SecondMenu.swift in Sources */,
+				1A4F0D642C0F11E0007B7390 /* pacmanApp.swift in Sources */,
+				1AEE8DF62C2412D800D09B60 /* GameStats.swift in Sources */,
+				1AEE8E162C29792300D09B60 /* BlinkyView.swift in Sources */,
+				1A98902A2C2B6ED900A19D4A /* LoseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A4F0D6D2C0F11E2007B7390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A4F0D6E2C0F11E2007B7390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1A4F0D702C0F11E2007B7390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pacman/pacman.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pacman/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessica.pacman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A4F0D712C0F11E2007B7390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pacman/pacman.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pacman/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessica.pacman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A4F0D5B2C0F11E0007B7390 /* Build configuration list for PBXProject "pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4F0D6D2C0F11E2007B7390 /* Debug */,
+				1A4F0D6E2C0F11E2007B7390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A4F0D6F2C0F11E2007B7390 /* Build configuration list for PBXNativeTarget "pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4F0D702C0F11E2007B7390 /* Debug */,
+				1A4F0D712C0F11E2007B7390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A4F0D582C0F11E0007B7390 /* Project object */;
+}

@@ -1,0 +1,20 @@
+{
+  "source": "/Users/jessicapawlowska/Documents/projects/pacman/pacman/GameStatsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Aktualna liczba punktów: %lld"
+      },
+      {
+        "comment": "",
+        "key": "Ilość żyć: %lld"
+      },
+      {
+        "comment": "",
+        "key": "Nazwa: %@"
+      }
+    ]
+  },
+  "version": 1
+}

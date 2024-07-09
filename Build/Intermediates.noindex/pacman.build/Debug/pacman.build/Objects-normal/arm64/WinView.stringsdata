@@ -1,0 +1,20 @@
+{
+  "source": "/Users/jessicapawlowska/Documents/projects/pacman/pacman/WinView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "YOU WIN"
+      },
+      {
+        "comment": "",
+        "key": "You still have %lld lives left"
+      },
+      {
+        "comment": "",
+        "key": "RESTART"
+      }
+    ]
+  },
+  "version": 1
+}
