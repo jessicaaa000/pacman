@@ -13,7 +13,11 @@ class PacmanLogic : ObservableObject {
     var moveInMemory: Bool = false;
     let speed: Double = 0.01;
     let step: Double = 1.0;
-    var timer: Timer? = nil
+    var timer: Timer? = nil;
+    var wentDown: Bool = false;
+    var wentUp: Bool = false;
+    var wentRight: Bool = false;
+    var wentLeft: Bool = false;
     
     func Teleportation(pacman: Pacman, board: PacmanBoard){
         let row = Int(round((pacman.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
@@ -88,6 +92,10 @@ class PacmanLogic : ObservableObject {
     func moveLeft(pacman: Pacman, board: PacmanBoard) -> Bool
     {
         if board.isTunnel(x: CGFloat(pacman.xCoordinate-Double(board.tileSize)), y: CGFloat(pacman.yCoordinate)) && board.isTunnel(x: CGFloat(pacman.xCoordinate-Double(board.tileSize)), y: CGFloat(pacman.yCoordinate + Double(board.tileSize-1))) {
+            wentDown = false;
+            wentUp = false;
+            wentRight = false;
+            wentLeft = true;
             if (pacman.nextDirection == .left && moveInMemory == true) {
                 moveInMemory = false;
             }
@@ -110,11 +118,14 @@ class PacmanLogic : ObservableObject {
             if (moveInMemory == true && pacman.nextDirection == .left){
                 moveInMemory = false;
             }
+            //pacman.nextDirection = .left;
             return true;
             }
         else {
-                moveInMemory = true;
+            if (wentLeft == false){
                 pacman.nextDirection = .left;
+                moveInMemory = true;
+            }
             return false;
         }
     }
@@ -122,6 +133,10 @@ class PacmanLogic : ObservableObject {
     func moveRight(pacman: Pacman, board: PacmanBoard) -> Bool
     {
         if board.isTunnel(x: CGFloat(pacman.xCoordinate+1), y: CGFloat(pacman.yCoordinate)) &&  board.isTunnel(x: CGFloat(pacman.xCoordinate+1), y: CGFloat(pacman.yCoordinate + Double(board.tileSize-1))) {
+            wentDown = false;
+            wentUp = false;
+            wentRight = true;
+            wentLeft = false;
             if(pacman.imgCounter<12){
                 if (pacman.nextDirection == .right && moveInMemory == true) {
                     moveInMemory = false;
@@ -144,11 +159,14 @@ class PacmanLogic : ObservableObject {
             if (moveInMemory == true && pacman.nextDirection == .right){
                 moveInMemory = false;
             }
+            //pacman.nextDirection = .right;
             return true;
         }
         else {
-                moveInMemory = true;
+            if (wentRight == false){
                 pacman.nextDirection = .right;
+                moveInMemory = true;
+            }
         return false;
         }
     }
@@ -157,6 +175,10 @@ class PacmanLogic : ObservableObject {
     func moveDown(pacman: Pacman, board: PacmanBoard) -> Bool
     {
         if board.isTunnel(x: CGFloat(pacman.xCoordinate), y: CGFloat(pacman.yCoordinate+Double(board.tileSize))) && board.isTunnel(x: CGFloat(pacman.xCoordinate-Double(board.tileSize-1)), y: CGFloat(pacman.yCoordinate+Double(board.tileSize))) {
+            wentDown = true;
+            wentUp = false;
+            wentRight = false;
+            wentLeft = false;
             if (pacman.nextDirection == .down && moveInMemory == true) {
                 moveInMemory = false;
             }
@@ -180,11 +202,14 @@ class PacmanLogic : ObservableObject {
             if (moveInMemory == true && pacman.nextDirection == .down){
                 moveInMemory = false;
             }
+            //pacman.nextDirection = .down;
             return true;
         }
         else {
-                moveInMemory = true;
+            if (wentDown == false){
                 pacman.nextDirection = .down;
+                moveInMemory = true;
+            }
             return false;
         }
     }
@@ -193,6 +218,10 @@ class PacmanLogic : ObservableObject {
     func moveUp(pacman: Pacman, board: PacmanBoard) -> Bool
     {
         if board.isTunnel(x: CGFloat(pacman.xCoordinate), y: CGFloat(pacman.yCoordinate-1)) && board.isTunnel(x: CGFloat(pacman.xCoordinate - Double(board.tileSize-1)), y: CGFloat(pacman.yCoordinate-1)) {
+            wentDown = false;
+            wentUp = true;
+            wentRight = false;
+            wentLeft = false;
             if (pacman.nextDirection == .up && moveInMemory == true) {
                 moveInMemory = false;
             }
@@ -216,11 +245,14 @@ class PacmanLogic : ObservableObject {
             if (moveInMemory == true && pacman.nextDirection == .up){
                 moveInMemory = false;
             }
+            //pacman.nextDirection = .up; //UWAGA NA TO
             return true;
         }
         else {
-                moveInMemory = true;
+            if (wentUp == false){
                 pacman.nextDirection = .up;
+                moveInMemory = true;
+            }
             return false;
         }
     }
