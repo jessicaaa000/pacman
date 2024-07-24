@@ -52,7 +52,7 @@ class PacmanBoard: ObservableObject {
         let col = Col
 
         // Calculate the x and y coordinates
-        let x: Double = Double(col * tileSize + tileSize / 2)
+        let x: Double = Double(col * tileSize + tileSize / 2) - 1;
         let y: Double = Double(row * tileSize + tileSize / 2)
 
         return (x, y)
