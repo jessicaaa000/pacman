@@ -22,6 +22,7 @@ class GhostLogic : ObservableObject {
     let step: Double = 1.0;
     var timer: Timer? = nil
     var directionNum: Int = 0;
+    var path: [pathBackward] = [];
     
     func Teleportation(ghost: Ghost, board: PacmanBoard){
         let row = Int(round((ghost.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
@@ -38,7 +39,7 @@ class GhostLogic : ObservableObject {
                 moveRight(ghost: ghost, board: board);
             }
             (ghost.xCoordinate, ghost.yCoordinate) = board.StartPoint(Row: row, Col: 1);
-            for i in 0..<board.tileSize {
+            for _ in 0..<board.tileSize {
                 moveRight(ghost: ghost, board: board);
             }
             ghost.direction = .right
@@ -46,7 +47,7 @@ class GhostLogic : ObservableObject {
     }
     
     func startTimer(ghost: Ghost, board: PacmanBoard, pacman: Pacman, stats: GameStats) {
-        self.timer = Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true) { _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
             Task {
                 await self.updateGhost(ghost: ghost, board: board, pacman: pacman, stats: stats)
             }
@@ -55,27 +56,31 @@ class GhostLogic : ObservableObject {
     }
     
     private func updateGhost(ghost: Ghost, board: PacmanBoard, pacman: Pacman, stats: GameStats) async {
-        if self.moveInMemory {
-            if ghost.nextDirection == .up && self.moveUp(ghost: ghost, board: board) {
-                ghost.direction = ghost.nextDirection
-            } else if ghost.nextDirection == .right && self.moveRight(ghost: ghost, board: board) {
-                ghost.direction = ghost.nextDirection
-            } else if ghost.nextDirection == .left && self.moveLeft(ghost: ghost, board: board) {
-                ghost.direction = ghost.nextDirection
-            } else if ghost.nextDirection == .down && self.moveDown(ghost: ghost, board: board) {
-                ghost.direction = ghost.nextDirection
+
+        Astar(ghost: ghost, board: board, pacman:  pacman);
+        
+        self.timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
+            Task {
+                var ghostCol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)));
+                var ghostRow = Int(round((ghost.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)));
+                for elem in self.path{
+                    if (elem.RCCoordinates == (ghostRow, ghostCol)){
+                        ghost.direction = elem.direction;
+                        break;
+                    }
+                }
+                self.moveGhost(ghost: ghost, board: board)
             }
         }
+        RunLoop.current.add(self.timer!, forMode: .common)
 
-        self.moveGhost(ghost: ghost, board: board)
-
-        if ghost.direction == .up && !self.moveUp(ghost: ghost, board: board) ||
-            ghost.direction == .down && !self.moveDown(ghost: ghost, board: board) ||
-            ghost.direction == .left && !self.moveLeft(ghost: ghost, board: board) ||
-            ghost.direction == .right && !self.moveRight(ghost: ghost, board: board) {
-            let directions: [Direction] = [.left, .right, .up, .down]
-            ghost.direction = directions.randomElement()!
-        }
+//        if ghost.direction == .up && !self.moveUp(ghost: ghost, board: board) ||
+//            ghost.direction == .down && !self.moveDown(ghost: ghost, board: board) ||
+//            ghost.direction == .left && !self.moveLeft(ghost: ghost, board: board) ||
+//            ghost.direction == .right && !self.moveRight(ghost: ghost, board: board) {
+//            let directions: [Direction] = [.left, .right, .up, .down]
+//            ghost.direction = directions.randomElement()!
+//        }
 
         await self.Collision(pacman: pacman, ghost: ghost, stats: stats, board: board)
     }
@@ -249,108 +254,144 @@ class GhostLogic : ObservableObject {
         }
     }
     
-//    func FastWaytoPac(pacman: Pacman, board: PacmanBoard, ghost: Ghost){
-//        var visitedArray: [[Bool]] = Array(repeating: Array(repeating: false, count: 33), count: 33)
-//        var row = 33
-//        var col = 33
-//        for row in 0..<row {
-//            for col in 0..<col {
-//                visitedArray[row][col] = false
-//            }
-//        }
-//        let PacRow = Int(round((pacman.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
-//        let PacCol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)))
-//        let Ghostrow = Int(round((ghost.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
-//        let Ghostcol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)))
-//        var Queue = Queue<Elem>()
-//        var FirstCoor = Elem(Row: Ghostrow, Col: Ghostcol, direction: ghost.direction)
-//        Queue.enqueue(FirstCoor)
-//        while Queue.isEmpty() == false {
-//            var eelem: Elem = Queue.dequeue()!
-//            visitedArray[Ghostrow][Ghostcol] = true;
-//            if (eelem.Col == PacCol && eelem.Row == PacRow){
-//                //MakeRoad(ghost: ghost, queue: &Queue, board: board);
-//                break;
-//            }
-//            if ((board.isTunnel(row: (eelem.Row - 1), col: eelem.Col) == true) && visitedArray[(eelem.Row - 1)][eelem.Col] == false) {
-//                var Coor = Elem(Row: (eelem.Row - 1), Col: eelem.Col, direction: .left)
-//                Queue.enqueue(Coor)
-//                visitedArray[eelem.Row - 1][eelem.Col] = true;
-//            }
-//            if ((board.isTunnel(row: (eelem.Row + 1), col: eelem.Col) == true) && visitedArray[(eelem.Row + 1)][eelem.Col] == false) {
-//                var Coor = Elem(Row: (eelem.Row + 1), Col: eelem.Col, direction: .right)
-//                Queue.enqueue(Coor)
-//                visitedArray[eelem.Row + 1][eelem.Col] = true;
-//            }
-//            if ((board.isTunnel(row: eelem.Row, col: (eelem.Col - 1)) == true) && visitedArray[(eelem.Row)][eelem.Col - 1] == false) {
-//                var Coor = Elem(Row: eelem.Row, Col: (eelem.Col - 1), direction: .up)
-//                Queue.enqueue(Coor)
-//                visitedArray[eelem.Row][eelem.Col - 1] = true;
-//            }
-//            if ((board.isTunnel(row: eelem.Row, col: (eelem.Col + 1)) == true) && visitedArray[(eelem.Row)][eelem.Col + 1] == false) {
-//                var Coor = Elem(Row: eelem.Row, Col: (eelem.Col + 1), direction: .down)
-//                Queue.enqueue(Coor)
-//                visitedArray[eelem.Row][eelem.Col + 1] = true;
-//            }
-//        }
-//    }
+    func Astar(ghost: Ghost, board: PacmanBoard, pacman: Pacman)-> Bool {
+        var zmienna: Int = 0;
+        var state = false;
+        var startrow = Int(round((ghost.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
+        var startcol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)))
+        board.gameBoard[startrow][startcol] = .otwarte;
+        var distancesOpen: [distance] = [];
+        var distancesClosed: [distance] = [];
+        var toPac = sqrt((pow((pacman.xCoordinate-ghost.xCoordinate), 2) + pow((pacman.yCoordinate-ghost.yCoordinate), 2)));
+        var Start = distance(row: startrow, col: startcol, parentRow: startrow, parentCol: startcol, fromStart: 0, toPacman: toPac, sum: toPac);
+        distancesOpen.append(Start);
+        var current = Start;
+        var newrow: Int = startrow
+        var newcol: Int = startcol;
+        repeat{
+            if (checking_neighbours(board: board, row: newrow, col: newcol, startrow: startrow, startcol: startcol, pacman: pacman, ghost: ghost, distancesOpen: &distancesOpen, distancesClosed: distancesClosed) == true){
+                state = true;
+            }
+            if let index = distancesOpen.firstIndex(of: current) {
+                distancesOpen.remove(at: index)
+                board.gameBoard[current.row][current.col] = .zamkniete
+                distancesClosed.append(current);
+            }
+            var thesmallest = distancesOpen[0].sum;
+            var smallestRow = distancesOpen[0].row;
+            var smallestCol = distancesOpen[0].col;
+            for elem in distancesOpen{
+                if (elem.sum)<thesmallest{
+                    thesmallest = (elem.sum);
+                    smallestRow = elem.row;
+                    smallestCol = elem.col;
+                    current = elem;
+                }
+            }
+            newrow = smallestRow;
+            newcol = smallestCol;
+            zmienna = zmienna+1;
+        } while (state == false);
+        return true;
+    }
     
-//    func MazeSolver (pacman: Pacman, board: PacmanBoard, ghost: Ghost) {
-//        var wall: [[Bool]] = Array(repeating: Array(repeating: false, count: 35), count: 28)
-//        for row in 0..<26{
-//            for col in 0..<26{
-//                if (board.gameBoard[row][col] == .wall){
-//                    wall[row][col] = true;
-//                }
-//            }
-//            print()
-//        }
-//        var wasHere: [[Bool]] = Array(repeating: Array(repeating: false, count: 35), count: 28)
-//        var correctPath: [[Bool]] = Array(repeating: Array(repeating: false, count: 35), count: 28)
-//        var startRow = Int(round((ghost.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
-//        var startCol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)))
-//        var endCol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)))
-//        var endRow = Int(round((pacman.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
-//        recursiveSolve(startrow: startRow, startcol: startCol, endrow: endRow, endcol: endCol, wall: &wall, wasHere: &wasHere, correctPath: &correctPath)
-//        for row in 0..<28{
-//            for col in 0..<35{
-//                print(correctPath[row][col])
-//            }
-//            print()
-//        }
-//    }
+    func checking_neighbours(board: PacmanBoard, row: Int, col: Int, startrow: Int, startcol: Int, pacman: Pacman, ghost: Ghost, distancesOpen: inout [distance], distancesClosed: [distance])-> Bool{
+        var newdirection : Direction;
+        var state = false;
+        if (board.isTunnel(row: row, col: col+1) == true) {
+            print("prawo");
+            newdirection = .right;
+            let(_, currentstate) = calculateDistance(row: row, col: (col+1), parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, direction: newdirection, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
+            state = state || currentstate;
+        }
+        if (board.isTunnel(row: row, col: (col-1)) == true) {
+            print("lewo");
+            newdirection = .left;
+            let(_, currentstate) = calculateDistance(row: row, col: (col-1), parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, direction: newdirection, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
+            state = state || currentstate;
+        }
+        if (board.isTunnel(row: (row+1), col: col) == true) {
+            print("dół");
+            newdirection = .down;
+            let(_, currentstate) = calculateDistance(row: (row+1), col: col, parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, direction: newdirection, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
+            state = state || currentstate;
+        }
+        if (board.isTunnel(row: (row-1), col: col) == true) {
+            print("góra");
+            newdirection = .up;
+            let(_, currentstate) = calculateDistance(row: (row-1), col: col, parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, direction: newdirection, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
+            state = state || currentstate;
+        }
+        return state;
+    }
     
-//    func recursiveSolve(startrow: Int, startcol: Int, endrow: Int, endcol: Int, wall: inout [[Bool]], wasHere: inout [[Bool]], correctPath: inout [[Bool]]) -> Bool {
-//            if startrow == endrow && startcol == endcol { return true } // If you reached the end
-//            if wall[startrow][startcol] || wasHere[startrow][startcol] { return false } // If you are on a wall or already were here
-//            wasHere[startrow][startcol] = true
-//
-//            if startrow != 0 { // Checks if not on left edge
-//                if recursiveSolve(startrow: startrow - 1, startcol: startcol, endrow: endrow, endcol: endcol, wall: &wall, wasHere: &wasHere, correctPath: &correctPath) { // Recalls method one to the left
-//                    correctPath[startrow-1][startcol] = true // Sets that path value to true
-//                    return true
-//                }
-//            }
-//            if startrow != 27 { // Checks if not on right edge
-//                if recursiveSolve(startrow: startrow + 1, startcol: startcol, endrow: endrow, endcol: endcol, wall: &wall, wasHere: &wasHere, correctPath: &correctPath) { // Recalls method one to the right
-//                    correctPath[startrow+1][startcol] = true
-//                    return true
-//                }
-//            }
-//            if startcol != 0 { // Checks if not on top edge
-//                if recursiveSolve(startrow: startrow, startcol: startcol - 1, endrow: endrow, endcol: endcol, wall: &wall, wasHere: &wasHere, correctPath: &correctPath) { // Recalls method one up
-//                    correctPath[startrow][startcol-1] = true
-//                    return true
-//                }
-//            }
-//            if startcol != 34 { // Checks if not on bottom edge
-//                if recursiveSolve(startrow: startrow, startcol: startcol + 1, endrow: endrow, endcol: endcol, wall: &wall, wasHere: &wasHere, correctPath: &correctPath) { // Recalls method one down
-//                    correctPath[startrow][startcol+1] = true
-//                    return true
-//                }
-//            }
-//            return false
-//        }
+    func calculateDistance(row: Int, col: Int, parentrow: Int, parentcol: Int, board: PacmanBoard, pacman: Pacman, ghost: Ghost, direction: Direction, distancesOpen: inout [distance], distancesClosed: [distance]) -> (distance: distance, state: Bool)
+    {
+        var state = false;
+        let pacRow = Int(round((pacman.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)));
+        let pacCol = Int(round((pacman.xCoordinate) / CGFloat(board.tileSize)));
+        if (row == pacRow && col == pacCol){
+            state = true;
+        }
+        let startx = ghost.xCoordinate
+        let starty = ghost.yCoordinate
+        let x: Double = Double(col * board.tileSize + board.tileSize / 2) - 1;
+        let y: Double = Double(row * board.tileSize + board.tileSize / 2);
+        
+        var fromStart = sqrt((pow((startx-x), 2) + pow((starty-y), 2)));
+        var toPac = sqrt((pow((pacman.xCoordinate-x), 2) + pow((pacman.yCoordinate-y), 2)));
+        var Node = distance(row: row, col: col, parentRow: parentrow, parentCol: parentcol, fromStart: fromStart, toPacman: toPac, sum: (fromStart+toPac));
+        distancesOpen.append(Node);
+        board.gameBoard[row][col] = .otwarte
+        
+        if (state == true){
+            print("JESTES U CELU");
+            var distances: [distance] = [];
+            distances.append(contentsOf: distancesOpen);
+            distances.append(contentsOf: distancesClosed);
+            path(node: Node, board: board, ghost: ghost, distances: distances);
+        }
+        
+        return (Node, state);
+    }
     
+    func path(node: distance, board: PacmanBoard, ghost: Ghost, distances: [distance]){
+        var Path: [pathBackward] = [];
+        var startrow = Int(round((ghost.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
+        var startcol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)))
+        var pacmanPos = pathBackward(RCCoordinates: (node.row, node.col), direction: .none)
+        Path.append(pacmanPos);
+        board.gameBoard[node.row][node.col] = .droga;
+        var currentdist = node;
+        repeat{
+            if (currentdist.col<currentdist.parentCol){
+                var elem: pathBackward = pathBackward(RCCoordinates: (currentdist.parentRow, currentdist.parentCol), direction: .left);
+                Path.append(elem);
+                board.gameBoard[currentdist.parentRow][currentdist.parentCol] = .droga;
+            }
+            if (currentdist.col>currentdist.parentCol){
+                var elem: pathBackward = pathBackward(RCCoordinates: (currentdist.parentRow, currentdist.parentCol), direction: .right);
+                Path.append(elem);
+                board.gameBoard[currentdist.parentRow][currentdist.parentCol] = .droga;
+            }
+            if (currentdist.row<currentdist.parentRow){
+                var elem: pathBackward = pathBackward(RCCoordinates: (currentdist.parentRow, currentdist.parentCol), direction: .up);
+                Path.append(elem);
+                board.gameBoard[currentdist.parentRow][currentdist.parentCol] = .droga;
+            }
+            if (currentdist.row>currentdist.parentRow){
+                var elem: pathBackward = pathBackward(RCCoordinates: (currentdist.parentRow, currentdist.parentCol), direction: .down);
+                Path.append(elem);
+                board.gameBoard[currentdist.parentRow][currentdist.parentCol] = .droga;
+            }
+            for elem in distances{
+                if (elem.row == currentdist.parentRow && elem.col == currentdist.parentCol){
+                    currentdist = elem;
+                    break;
+                }
+            }
+        } while((currentdist.col != startcol) || (currentdist.row != startrow))
+        self.path = Path;
+    }
 }
 

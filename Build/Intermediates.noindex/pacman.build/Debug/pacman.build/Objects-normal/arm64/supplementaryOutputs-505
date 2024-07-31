@@ -1,0 +1,18 @@
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/pacmanBoard.swift":
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanBoard.o"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanBoard.dia"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanBoard.swiftdeps"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanBoard.d"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/pacmanBoard.swiftconstvalues"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/ClydeView.swift":
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ClydeView.swiftconstvalues"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ClydeView.swiftdeps"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ClydeView.o"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ClydeView.d"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ClydeView.dia"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/direction.swift":
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/direction.o"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/direction.d"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/direction.dia"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/direction.swiftconstvalues"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/direction.swiftdeps"

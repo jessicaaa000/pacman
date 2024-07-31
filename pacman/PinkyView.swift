@@ -21,7 +21,7 @@ struct PinkyView: View {
         }
         .onAppear {
             let pinkyQueue = DispatchQueue(label: "pinky.queue", qos: .userInitiated)
-            ghostlogic.startTimer(ghost: pinky, board: board, pacman: pacman, stats: stats);
+            //ghostlogic.startTimer(ghost: pinky, board: board, pacman: pacman, stats: stats);
                 let directions: [Direction] = [.left, .right, .up, .down]
                 let randomDirection = directions.randomElement()!
                 if randomDirection == .left && ghostlogic.moveLeft(ghost: pinky, board: board) == true {

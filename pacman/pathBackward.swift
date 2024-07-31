@@ -6,3 +6,7 @@
 //
 
 import Foundation
+struct pathBackward {
+    var RCCoordinates: (Int, Int);
+    var direction: Direction;
+}

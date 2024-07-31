@@ -44,6 +44,12 @@ struct BoardView: View {
             return Color(red: 0, green: 0, blue: 1)
         case .tunnel:
             return Color(red: 0, green: 0, blue: 0.545)
+        case .otwarte:
+            return Color(red: 0, green: 1, blue: 0)
+        case .zamkniete:
+            return Color(red: 1, green: 0, blue: 0)
+        case .droga:
+            return Color(red: 0.6, green: 0.3, blue: 0.2)
         }
     }
 }

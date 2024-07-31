@@ -1,0 +1,18 @@
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/GameStatsView.swift":
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStatsView.o"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStatsView.d"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStatsView.swiftdeps"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStatsView.dia"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GameStatsView.swiftconstvalues"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/WinView.swift":
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/WinView.o"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/WinView.swiftdeps"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/WinView.d"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/WinView.swiftconstvalues"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/WinView.dia"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/queue.swift":
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/queue.swiftconstvalues"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/queue.dia"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/queue.swiftdeps"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/queue.o"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/queue.d"

@@ -7,7 +7,7 @@
 import Observation
 import Foundation
 enum BoardType { case 
-    wall, tunnel }
+    wall, tunnel, otwarte, zamkniete, droga }
 
 @Observable
 class PacmanBoard: ObservableObject {

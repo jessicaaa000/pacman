@@ -1,0 +1,18 @@
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/FoodBoard.swift":
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodBoard.swiftdeps"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodBoard.dia"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodBoard.swiftconstvalues"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodBoard.d"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodBoard.o"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/PinkyView.swift":
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PinkyView.swiftconstvalues"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PinkyView.swiftdeps"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PinkyView.d"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PinkyView.dia"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PinkyView.o"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/PacmanLogic.swift":
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.dia"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.d"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.swiftdeps"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.o"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/PacmanLogic.swiftconstvalues"

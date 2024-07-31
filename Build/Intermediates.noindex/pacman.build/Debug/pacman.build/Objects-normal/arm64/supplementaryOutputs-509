@@ -1,0 +1,18 @@
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/InkyView.swift":
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/InkyView.o"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/InkyView.swiftdeps"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/InkyView.dia"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/InkyView.swiftconstvalues"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/InkyView.d"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/ContentView.swift":
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ContentView.d"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ContentView.swiftconstvalues"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ContentView.swiftdeps"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ContentView.o"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/ContentView.dia"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/DotView.swift":
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/DotView.swiftconstvalues"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/DotView.dia"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/DotView.o"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/DotView.d"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/DotView.swiftdeps"

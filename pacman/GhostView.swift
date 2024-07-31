@@ -22,7 +22,7 @@ struct GhostView: View {
             .frame(width: CGFloat(board.tileSize) * CGFloat(board.gameBoard[0].count),
                    height: CGFloat(board.tileSize) * CGFloat(board.gameBoard.count))
             .onAppear {
-                let blinkyPosition = board.StartPoint(Row: 6, Col: 20)
+                let blinkyPosition = board.StartPoint(Row: 14, Col: 12)
                 blinky.xCoordinate = blinkyPosition.x
                 blinky.yCoordinate = blinkyPosition.y
             }
@@ -30,7 +30,7 @@ struct GhostView: View {
             .frame(width: CGFloat(board.tileSize) * CGFloat(board.gameBoard[0].count),
                    height: CGFloat(board.tileSize) * CGFloat(board.gameBoard.count))
             .onAppear {
-                let inkyPosition = board.StartPoint(Row: 7, Col: 20)
+                let inkyPosition = board.StartPoint(Row: 14, Col: 14)
                 inky.xCoordinate = inkyPosition.x
                 inky.yCoordinate = inkyPosition.y
             }
@@ -38,7 +38,7 @@ struct GhostView: View {
             .frame(width: CGFloat(board.tileSize) * CGFloat(board.gameBoard[0].count),
                    height: CGFloat(board.tileSize) * CGFloat(board.gameBoard.count))
             .onAppear {
-                let pinkyPosition = board.StartPoint(Row: 8, Col: 20)
+                let pinkyPosition = board.StartPoint(Row: 14, Col: 15)
                 pinky.xCoordinate = pinkyPosition.x
                 pinky.yCoordinate = pinkyPosition.y
             }
@@ -46,7 +46,7 @@ struct GhostView: View {
             .frame(width: CGFloat(board.tileSize) * CGFloat(board.gameBoard[0].count),
                    height: CGFloat(board.tileSize) * CGFloat(board.gameBoard.count))
             .onAppear {
-                let clydePosition = board.StartPoint(Row: 9, Col: 20)
+                let clydePosition = board.StartPoint(Row: 14, Col: 16)
                 clyde.xCoordinate = clydePosition.x
                 clyde.yCoordinate = clydePosition.y
             }

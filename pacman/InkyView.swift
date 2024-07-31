@@ -21,7 +21,7 @@ struct InkyView: View {
         }
         .onAppear {
             DispatchQueue.main.async {
-                ghostlogic.startTimer(ghost: inky, board: board, pacman: pacman, stats: stats)
+                //ghostlogic.startTimer(ghost: inky, board: board, pacman: pacman, stats: stats)
                 
                 // Randomize initial direction
                 let directions: [Direction] = [.left, .right, .up, .down, .none]

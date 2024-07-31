@@ -1,0 +1,18 @@
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/FirstMenu.swift":
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FirstMenu.o"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FirstMenu.swiftdeps"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FirstMenu.dia"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FirstMenu.swiftconstvalues"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FirstMenu.d"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostView.swift":
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.dia"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.swiftconstvalues"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.d"
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.swiftdeps"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/GhostView.o"
+"/Users/jessicapawlowska/Documents/projects/pacman/pacman/FoodView.swift":
+  swift-dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodView.swiftdeps"
+  diagnostics: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodView.dia"
+  object: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodView.o"
+  const-values: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodView.swiftconstvalues"
+  dependencies: "/Users/jessicapawlowska/Documents/projects/pacman/Build/Intermediates.noindex/pacman.build/Debug/pacman.build/Objects-normal/arm64/FoodView.d"

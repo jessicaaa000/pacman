@@ -21,7 +21,7 @@ struct ClydeView: View {
         }
         .onAppear {
             let clydeQueue = DispatchQueue(label: "clyde.queue", qos: .userInitiated)
-            ghostlogic.startTimer(ghost: clyde, board: board, pacman: pacman, stats: stats);
+            //ghostlogic.startTimer(ghost: clyde, board: board, pacman: pacman, stats: stats);
                 let directions: [Direction] = [.left, .right, .up, .down]
                 let randomDirection = directions.randomElement()!
                 if randomDirection == .left && ghostlogic.moveLeft(ghost: clyde, board: board) == true {
