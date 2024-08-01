@@ -3,4 +3,594 @@
    uuid = "D9D7737E-0A87-403B-99AD-042357AE67F6"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B50B4AF7-1E6D-4850-AA9C-97F6821F420F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
+            landmarkName = "Astar(ghost:board:pacman:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B50B4AF7-1E6D-4850-AA9C-97F6821F420F - a8b27f0317263e20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; Swift.Bool"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+               <Location
+                  uuid = "B50B4AF7-1E6D-4850-AA9C-97F6821F420F - 8632ee4fb4b01c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "1348">
+               </Location>
+               <Location
+                  uuid = "B50B4AF7-1E6D-4850-AA9C-97F6821F420F - 20e28848a5a88890"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (pacman.distance, pacman.distance) -&gt; Swift.Bool in pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "B50B4AF7-1E6D-4850-AA9C-97F6821F420F - 8632ee4fb4b01c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "1332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFDD1F51-54EA-4C71-BCE5-0692CB46F8AB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "Astar(ghost:board:pacman:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BFDD1F51-54EA-4C71-BCE5-0692CB46F8AB - a8b27f03172639bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; Swift.Bool"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "266"
+                  endingLineNumber = "266"
+                  offsetFromSymbolStart = "1560">
+               </Location>
+               <Location
+                  uuid = "BFDD1F51-54EA-4C71-BCE5-0692CB46F8AB - 8632ee4fb4b0655"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "266"
+                  endingLineNumber = "266"
+                  offsetFromSymbolStart = "1624">
+               </Location>
+               <Location
+                  uuid = "BFDD1F51-54EA-4C71-BCE5-0692CB46F8AB - 8632ee4fb4b0655"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "266"
+                  endingLineNumber = "266"
+                  offsetFromSymbolStart = "1608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06BA0D24-A396-4764-86FF-411C5C638997"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "Astar(ghost:board:pacman:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "06BA0D24-A396-4764-86FF-411C5C638997 - a8b27f03172638d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; Swift.Bool"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "2208">
+               </Location>
+               <Location
+                  uuid = "06BA0D24-A396-4764-86FF-411C5C638997 - 8632ee4fb4b073c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "2332">
+               </Location>
+               <Location
+                  uuid = "06BA0D24-A396-4764-86FF-411C5C638997 - 8632ee4fb4b06b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "271"
+                  endingLineNumber = "271"
+                  offsetFromSymbolStart = "1752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C065A78-0748-4293-A4C1-060E5228B7E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "Astar(ghost:board:pacman:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FA10F79-5361-4AA7-B383-4F96B1865ABB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "Astar(ghost:board:pacman:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E04A08E2-AE78-4492-B7B6-85329D44DA52"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "Astar(ghost:board:pacman:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57359017-2214-49F9-8F7E-C58A71459D1A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAD2D39A-6FD5-4AD2-B61C-B31C50B3454B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11CDDEB6-751E-48CF-92A3-9ECB1CB83ACC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "367D61EA-566E-4ED3-80E7-371C3EACDE5F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E920DD3-ED3B-4D32-A7D7-60CAA67F719F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "calculateDistance(row:col:parentrow:parentcol:board:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FC6561C-F020-46B2-93BB-B9609045C964"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
+            landmarkName = "calculateDistance(row:col:parentrow:parentcol:board:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B35F9FB9-3F72-4053-BFA9-AFFD84D7E86C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "calculateDistance(row:col:parentrow:parentcol:board:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB7987BD-7A4B-43D5-B960-3FD59820C224"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "calculateDistance(row:col:parentrow:parentcol:board:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09598953-034C-46F3-9BA1-8476F17AB9F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "Astar(ghost:board:pacman:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "09598953-034C-46F3-9BA1-8476F17AB9F3 - 8632ee4fb4b01a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "263"
+                  endingLineNumber = "263"
+                  offsetFromSymbolStart = "1384">
+               </Location>
+               <Location
+                  uuid = "09598953-034C-46F3-9BA1-8476F17AB9F3 - 8632ee4fb4b01a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pacman.GhostLogic.Astar(ghost: pacman.Ghost, board: pacman.PacmanBoard, pacman: pacman.Pacman) -&gt; ()"
+                  moduleName = "pacman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jessicapawlowska/Documents/projects/pacman/pacman/GhostLogic.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "263"
+                  endingLineNumber = "263"
+                  offsetFromSymbolStart = "1368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61CE4914-A461-4B23-8AA7-3DAA7A27CEE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00236428-5052-4FD7-B71F-98A47052748D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6B11312-F677-461F-B061-508FDE6534D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24A6FA96-B1D0-4228-9E9A-9E0A09C23AB5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4B53C35-F3A5-4388-9F2F-D3F8AE497937"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72548B28-B0FC-4133-BB00-4D0A33512A6C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE662AD9-316A-4B9C-B47C-A4015084085B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A953FD0-6609-41C7-94EB-C294D313DB5D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6FA870CD-F68A-4BA3-AC60-75BCE79A3756"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E63E58AF-4E3D-4FCF-9949-FBB4C5D4C010"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pacman/GhostLogic.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "checking_neighbours(board:row:col:startrow:startcol:pacman:ghost:distancesOpen:distancesClosed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'pacman' in project 'pacman' (no dependencies)

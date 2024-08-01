@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A4B3A2E2C55992F002E4166 /* distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B3A2D2C55992F002E4166 /* distance.swift */; };
 		1A4B3A302C58BF7A002E4166 /* pathBackward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B3A2F2C58BF7A002E4166 /* pathBackward.swift */; };
+		1A4B3A322C5B932E002E4166 /* priorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B3A312C5B932E002E4166 /* priorityQueue.swift */; };
 		1A4F0D642C0F11E0007B7390 /* pacmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F0D632C0F11E0007B7390 /* pacmanApp.swift */; };
 		1A4F0D662C0F11E0007B7390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F0D652C0F11E0007B7390 /* ContentView.swift */; };
 		1A4F0D682C0F11E2007B7390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4F0D672C0F11E2007B7390 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		1A4B3A2D2C55992F002E4166 /* distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = distance.swift; sourceTree = "<group>"; };
 		1A4B3A2F2C58BF7A002E4166 /* pathBackward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathBackward.swift; sourceTree = "<group>"; };
+		1A4B3A312C5B932E002E4166 /* priorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priorityQueue.swift; sourceTree = "<group>"; };
 		1A4F0D602C0F11E0007B7390 /* pacman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pacman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4F0D632C0F11E0007B7390 /* pacmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pacmanApp.swift; sourceTree = "<group>"; };
 		1A4F0D652C0F11E0007B7390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				1AEE8E192C2985A700D09B60 /* direction.swift */,
 				1AEE8E1B2C298D5C00D09B60 /* queue.swift */,
 				1A4B3A2F2C58BF7A002E4166 /* pathBackward.swift */,
+				1A4B3A312C5B932E002E4166 /* priorityQueue.swift */,
 			);
 			path = pacman;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				1AEE8E102C2973D500D09B60 /* Inky.swift in Sources */,
 				1AEE8E142C29759300D09B60 /* GhostLogic.swift in Sources */,
 				1A9890202C2A194E00A19D4A /* PinkyView.swift in Sources */,
+				1A4B3A322C5B932E002E4166 /* priorityQueue.swift in Sources */,
 				1AEE8DF02C240D8500D09B60 /* FoodBoard.swift in Sources */,
 				1A4B3A2E2C55992F002E4166 /* distance.swift in Sources */,
 				1A4F0D662C0F11E0007B7390 /* ContentView.swift in Sources */,
