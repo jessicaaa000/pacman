@@ -56,7 +56,7 @@ class GhostLogic : ObservableObject {
     }
     
     private func updateGhost(ghost: Ghost, board: PacmanBoard, pacman: Pacman, stats: GameStats) async {
-
+        
         Astar(ghost: ghost, board: board, pacman:  pacman);
         
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
@@ -73,18 +73,18 @@ class GhostLogic : ObservableObject {
             }
         }
         RunLoop.current.add(self.timer!, forMode: .common)
-
-//        if ghost.direction == .up && !self.moveUp(ghost: ghost, board: board) ||
-//            ghost.direction == .down && !self.moveDown(ghost: ghost, board: board) ||
-//            ghost.direction == .left && !self.moveLeft(ghost: ghost, board: board) ||
-//            ghost.direction == .right && !self.moveRight(ghost: ghost, board: board) {
-//            let directions: [Direction] = [.left, .right, .up, .down]
-//            ghost.direction = directions.randomElement()!
-//        }
-
+        
+        //        if ghost.direction == .up && !self.moveUp(ghost: ghost, board: board) ||
+        //            ghost.direction == .down && !self.moveDown(ghost: ghost, board: board) ||
+        //            ghost.direction == .left && !self.moveLeft(ghost: ghost, board: board) ||
+        //            ghost.direction == .right && !self.moveRight(ghost: ghost, board: board) {
+        //            let directions: [Direction] = [.left, .right, .up, .down]
+        //            ghost.direction = directions.randomElement()!
+        //        }
+        
         await self.Collision(pacman: pacman, ghost: ghost, stats: stats, board: board)
     }
-
+    
     func Collision(pacman: Pacman, ghost: Ghost, stats: GameStats, board: PacmanBoard) async {
         let pacCol = Int(round((pacman.xCoordinate) / CGFloat(board.tileSize)))
         let pacRow = Int(round((pacman.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
@@ -254,57 +254,73 @@ class GhostLogic : ObservableObject {
         }
     }
     
-    func Astar(ghost: Ghost, board: PacmanBoard, pacman: Pacman) {
+    func Astar(ghost: Ghost, board: PacmanBoard, pacman: Pacman)-> Bool {
+        var zmienna: Int = 0;
         var state = false;
         var startrow = Int(round((ghost.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)))
         var startcol = Int(round((ghost.xCoordinate) / CGFloat(board.tileSize)))
         board.gameBoard[startrow][startcol] = .otwarte;
-        var distancesOpen = PriorityQueue<distance>(sort: { $0.sum < $1.sum });
+        var distancesOpen: [distance] = [];
         var distancesClosed: [distance] = [];
         var toPac = sqrt((pow((pacman.xCoordinate-ghost.xCoordinate), 2) + pow((pacman.yCoordinate-ghost.yCoordinate), 2)));
         var Start = distance(row: startrow, col: startcol, parentRow: startrow, parentCol: startcol, fromStart: 0, toPacman: toPac, sum: toPac);
         distancesOpen.append(Start);
+        var current = Start;
         var newrow: Int = startrow
         var newcol: Int = startcol;
-        
-        while !distancesOpen.isEmpty{
-            guard var current = distancesOpen.remove() else { break }
-            newrow = current.row;
-            newcol = current.col;
+        repeat{
             if (checking_neighbours(board: board, row: newrow, col: newcol, startrow: startrow, startcol: startcol, pacman: pacman, ghost: ghost, distancesOpen: &distancesOpen, distancesClosed: distancesClosed) == true){
                 state = true;
-                break;
             }
-            print(current);
-            print(" ");
-            print(distancesOpen.count);
-            distancesClosed.append(current);
-            board.gameBoard[current.row][current.col] = .zamkniete
-        }
+            if let index = distancesOpen.firstIndex(of: current) {
+                distancesOpen.remove(at: index)
+                board.gameBoard[current.row][current.col] = .zamkniete
+                distancesClosed.append(current);
+            }
+            var thesmallest = distancesOpen[0].sum;
+            var smallestRow = distancesOpen[0].row;
+            var smallestCol = distancesOpen[0].col;
+            for elem in distancesOpen{
+                if (elem.sum)<thesmallest{
+                    thesmallest = (elem.sum);
+                    smallestRow = elem.row;
+                    smallestCol = elem.col;
+                    current = elem;
+                }
+            }
+            newrow = smallestRow;
+            newcol = smallestCol;
+            zmienna = zmienna+1;
+        } while (state == false);
+        return true;
     }
     
-    func checking_neighbours(board: PacmanBoard, row: Int, col: Int, startrow: Int, startcol: Int, pacman: Pacman, ghost: Ghost, distancesOpen: inout PriorityQueue<distance>, distancesClosed: [distance])-> Bool{
+    func checking_neighbours(board: PacmanBoard, row: Int, col: Int, startrow: Int, startcol: Int, pacman: Pacman, ghost: Ghost, distancesOpen: inout [distance], distancesClosed: [distance])-> Bool{
         var state = false;
         if (board.isTunnel(row: row, col: col+1) == true) {
+            print("prawo");
             let(_, currentstate) = calculateDistance(row: row, col: (col+1), parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
             state = state || currentstate;
         }
         if (board.isTunnel(row: row, col: (col-1)) == true) {
+            print("lewo");
             let(_, currentstate) = calculateDistance(row: row, col: (col-1), parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
             state = state || currentstate;
         }
         if (board.isTunnel(row: (row+1), col: col) == true) {
+            print("dół");
             let(_, currentstate) = calculateDistance(row: (row+1), col: col, parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
             state = state || currentstate;
         }
         if (board.isTunnel(row: (row-1), col: col) == true) {
+            print("góra");
             let(_, currentstate) = calculateDistance(row: (row-1), col: col, parentrow: row, parentcol: col, board: board, pacman: pacman, ghost: ghost, distancesOpen: &distancesOpen, distancesClosed: distancesClosed);
             state = state || currentstate;
         }
         return state;
     }
     
-    func calculateDistance(row: Int, col: Int, parentrow: Int, parentcol: Int, board: PacmanBoard, pacman: Pacman, ghost: Ghost, distancesOpen: inout PriorityQueue<distance>, distancesClosed: [distance]) -> (distance: distance, state: Bool)
+    func calculateDistance(row: Int, col: Int, parentrow: Int, parentcol: Int, board: PacmanBoard, pacman: Pacman, ghost: Ghost, distancesOpen: inout [distance], distancesClosed: [distance]) -> (distance: distance, state: Bool)
     {
         var state = false;
         let pacRow = Int(round((pacman.yCoordinate - CGFloat(board.tileSize)) / CGFloat(board.tileSize)));
@@ -317,16 +333,16 @@ class GhostLogic : ObservableObject {
         let x: Double = Double(col * board.tileSize + board.tileSize / 2) - 1;
         let y: Double = Double(row * board.tileSize + board.tileSize / 2);
         
-        let fromStart = sqrt((pow((startx-x), 2) + pow((starty-y), 2)));
-        let toPac = sqrt((pow((pacman.xCoordinate-x), 2) + pow((pacman.yCoordinate-y), 2)));
-        let Node = distance(row: row, col: col, parentRow: parentrow, parentCol: parentcol, fromStart: fromStart, toPacman: toPac, sum: (fromStart+toPac));
+        var fromStart = sqrt((pow((startx-x), 2) + pow((starty-y), 2)));
+        var toPac = sqrt((pow((pacman.xCoordinate-x), 2) + pow((pacman.yCoordinate-y), 2)));
+        var Node = distance(row: row, col: col, parentRow: parentrow, parentCol: parentcol, fromStart: fromStart, toPacman: toPac, sum: (fromStart+toPac));
         distancesOpen.append(Node);
         board.gameBoard[row][col] = .otwarte
         
-        if state {
+        if (state == true){
             print("JESTES U CELU");
             var distances: [distance] = [];
-            distances.append(contentsOf: distancesOpen.allElements);
+            distances.append(contentsOf: distancesOpen);
             distances.append(contentsOf: distancesClosed);
             path(node: Node, board: board, ghost: ghost, distances: distances);
         }
@@ -373,4 +389,3 @@ class GhostLogic : ObservableObject {
         self.path = Path;
     }
 }
-
